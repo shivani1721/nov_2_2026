@@ -20,5 +20,13 @@ jobs:
       - name: mystep3-check the source code
         run: ls -al
       - name: mystep4-build docker image
-        run: docker image build -t shivanipanwar/shivaniimage_nov2:t1 -f Dockerfile .     
+        run: docker image build -t shivanipanwar/shivaniimage_nov2:t1 -f Dockerfile .
+      - name: mystep5-check the docker image
+        uses: docker images
+        with: 
+           username: ${{ secrets.DOCKERHUB_USERNAME }}
+           password: &{{ secrets.DOCKERHUB_TOKEN }}
+      - name: mystep7-push the docker image
+         run: docker image push shivanipanwar/shivaniimage_nov2:t1
+      - name: mystep8       
 
