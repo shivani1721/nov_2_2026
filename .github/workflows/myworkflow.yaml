@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
      - name: mystep1
-       run: |
+        run: |
           whoami
           pwd
           cat /etc/os-relesase
