@@ -2,7 +2,7 @@ name: myworkflow1
 on:
   push:
     branches:
-     - shubhambranch
+     - shivanibranch
   workflow_dispatch:
 jobs:
   myjob1:
