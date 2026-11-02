@@ -3,3 +3,17 @@ on:
   push:
     branches:
      - shubhambranch
+  workflow_dispatch:
+jobs:
+  myjob1:
+    runs-on: ubuntu-latest
+    steps:
+     - name: mystep1
+       run: |
+          whoami
+          pwd
+          cat /etc/os-relesase
+          cd 
+          ls -al
+          docker --version
+
