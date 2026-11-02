@@ -10,8 +10,6 @@ jobs:
     steps:
      - name: mystep1
         run: |
-           whoami
-           pwd
            cat /etc/os-release
            cd 
            ls -al
