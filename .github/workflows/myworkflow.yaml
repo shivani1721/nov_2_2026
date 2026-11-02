@@ -14,4 +14,11 @@ jobs:
            cd 
            ls -al
            docker --version
+           docker compose version
+      - name: mystep2- clone the repo
+        uses: actions/checkout@v4
+      - name: mystep3-check the source code
+        run: ls -al
+      - name: mystep4-build docker image
+        run: docker image build -t shivanipanwar/shivaniimage_nov2:t1 -f Dockerfile .     
 
