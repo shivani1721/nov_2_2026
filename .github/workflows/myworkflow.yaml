@@ -2,13 +2,13 @@ name: myworkflow1
 on:
   push:
     branches:
-     - shivanibranch
+      - shivanibranch
   workflow_dispatch:
 jobs:
   myjob1:
     runs-on: ubuntu-latest
     steps:
-     - name: mystep1
+      - name: mystep1
         run: |
            cat /etc/os-release
            cd 
