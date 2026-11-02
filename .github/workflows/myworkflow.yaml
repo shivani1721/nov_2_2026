@@ -10,10 +10,10 @@ jobs:
     steps:
      - name: mystep1
         run: |
-          whoami
-          pwd
-          cat /etc/os-relesase
-          cd 
-          ls -al
-          docker --version
+           whoami
+           pwd
+           cat /etc/os-relesase
+           cd 
+           ls -al
+           docker --version
 
