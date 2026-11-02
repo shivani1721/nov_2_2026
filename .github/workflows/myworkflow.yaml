@@ -12,7 +12,7 @@ jobs:
         run: |
            whoami
            pwd
-           cat /etc/os-relesase
+           cat /etc/os-release
            cd 
            ls -al
            docker --version
